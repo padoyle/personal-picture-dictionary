@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SpeechHelper</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_sentence">SentenceActivity</string>
+    <string name="title_activity_sentence_builder">SentenceBuilderActivity</string>
+    <string name="add_word_button_text">+</string>
+    <string name="backspace_button_text">&#0060;</string>
+    <string name="add_word_hint">New word&#8230;</string>
+    <string name="add_word_dialog_title">Add a Word</string>
+    <string name="add_word_submit_text">Add Word</string>
+    <string name="sentence_box_hint">Pick some words&#8230;</string>
+
+	<!-- Content Descriptions -->
+    <string name="category_icon_cd">Select this category</string>
+    <string name="gallery_button_cd">Get image from Gallery</string>
+    <string name="camera_button_cd">Get image from Camera</string>
+    <string name="word_image_cd">Image for the word</string>
+    
+</resources>

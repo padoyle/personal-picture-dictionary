@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SentenceBuilderActivity" >
+
+    <LinearLayout 
+        android:id="@+id/sentence_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.2" >
+        
+        <Button
+            android:id="@+id/add_word_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textSize="24sp"
+			android:textStyle="bold"
+            android:text="@string/add_word_button_text" />
+        
+        <Button
+            android:id="@+id/backspace_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textSize="24sp"
+			android:textStyle="bold"
+            android:text="@string/backspace_button_text" />
+        
+   	    <TextView
+   	        android:id="@+id/sentence_viewer"
+   	        android:layout_width="0dp"
+   	        android:layout_height="wrap_content"
+   	        android:layout_weight="1.0"
+   	        android:textSize="24sp"
+    	    android:hint="@string/sentence_box_hint"/>
+   	    
+    </LinearLayout>
+    
+    <LinearLayout
+		android:id="@+id/both_fragments_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:baselineAligned="false"
+		android:weightSum="1.5" >
+        
+        <fragment
+            android:id="@+id/category_fragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            class="com.padoyle.speechhelper.CategoryPickerFragment"
+            tools:layout="@layout/category_picker_view" />
+        
+        <fragment
+            android:id="@+id/words_fragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            class="com.padoyle.speechhelper.WordGridFragment"
+            tools:layout="@layout/word_grid_view" />
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.padoyle.speechhelper"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.padoyle.speechhelper.MainScreen"
+            android:label="@string/app_name" >
+         </activity>
+        <activity
+            android:name="com.padoyle.speechhelper.CategoryPickerFragment"
+            android:label="@string/title_activity_sentence" >
+        </activity>
+        <activity
+            android:name="com.padoyle.speechhelper.WordGridFragment"
+            android:label="@string/title_activity_sentence" >
+        </activity>
+    	<activity
+            android:name="com.padoyle.speechhelper.SentenceBuilderActivity"
+            android:label="@string/app_name">
+                   <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider android:name="com.padoyle.speechhelper.WordContentProvider"
+            android:authorities="com.padoyle.speechhelper.contentprovider"
+            android:exported="false">
+        </provider>
+    </application>
+
+</manifest>

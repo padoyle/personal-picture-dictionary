@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SentenceBuilderActivity" >
+
+    <LinearLayout 
+        android:id="@+id/sentence_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+	    <TextView
+	        android:id="@+id/sentence_viewer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp" 
+	        android:hint="@string/sentence_box_hint"/>
+        
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:weightSum="1.0" >
+	        
+	        <Button
+	            android:id="@+id/add_word_button"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+				android:layout_weight="0.5"
+				android:textSize="24sp"
+				android:textStyle="bold"
+	            android:text="@string/add_word_button_text" />
+	        
+	        <Button
+	            android:id="@+id/backspace_button"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+				android:layout_weight="0.5"
+				android:textSize="24sp"
+				android:textStyle="bold"
+	            android:text="@string/backspace_button_text" />
+	        
+	    </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+		android:id="@+id/fragment_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>
